@@ -1,0 +1,82 @@
+<div class="ajout">
+<form class='row justify-content-center rounded p-4 m-5' #computerForm ="ngForm" (ngSubmit)="editThisComputer()">
+    
+    <div class="col-6">
+    <h3>modifier cet élément</h3>
+
+    <div class="form-group">
+        <label for="model">modèle</label>
+        <input class='form-control' type="text" id='model' name='model' placeholder='modèle' required [(ngModel)]='computer.model' #model ='ngModel'/>
+        <p [hidden]='model.valid' class="alert alert-danger">saisis un nom de modèle valide</p>
+    </div>
+
+    <div class="form-group">
+        <label for="brand">marque</label>
+        <div class="form-check form-check-inline">
+            <input class='form-check-input' type="radio" id='brand1' name='brand' value='dell' [(ngModel)]='computer.brand' #brand ='ngModel'/>
+            <label class='form-check-label' for="brand">dell</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class='form-check-input' type="radio" id='brand2' name='brand' value='hp' [(ngModel)]='computer.brand' #brand ='ngModel'/>
+            <label class='form-check-label' for="brand">hp</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class='form-check-input' type="radio" id='brand3' name='brand' value='apple' [(ngModel)]='computer.brand' #brand ='ngModel'/>
+            <label class='form-check-label' for="brand">apple</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class='form-check-input' type="radio" id='brand4' name='brand' value='asus' [(ngModel)]='computer.brand' #brand ='ngModel'/>
+            <label class='form-check-label' for="brand">asus</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="type">type</label>
+        <select name='type' class="form-control" id="type" [(ngModel)]='computer.type' #type ='ngModel'>
+          <option id='type' name='type' value='ordinateur fixe'>ordinateur fixe</option>
+          <option id='type' name='type' value='ordinateur portable'>ordinateur portable</option>
+          <option id='type' name='type' value='tablette hybride'>tablette hybride</option>
+        </select>
+    </div>
+</div>
+
+    <!-- <label for="singleSelect"> Single select: </label><br>
+    <select name="singleSelect" ng-model="data.singleSelect">
+      <option value="option-1">Option 1</option>
+      <option value="option-2">Option 2</option>
+    </select>
+</div> -->
+<div class="col-6">
+    <div class="form-group">
+        <label for="category">catégorie</label>
+        <div class="form-check">
+            <input class='form-check-input' type="radio" id='category1' name='category' value='gaming' [(ngModel)]='computer.category' #category ='ngModel'/>
+            <label class='form-check-label' for="category">gaming</label>
+        </div>
+        <div class="form-check">
+            <input class='form-check-input' type="radio" id='category2' name='category' value='bureautique' [(ngModel)]='computer.category' #category ='ngModel'/>
+            <label class='form-check-label' for="category">bureautique</label>
+        </div>
+        <div class="form-check">
+            <input class='form-check-input' type="radio" id='category3' name='category' value='premier prix' [(ngModel)]='computer.category' #category ='ngModel'/>
+            <label class='form-check-label' for="category">premier prix</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="sellingPrice">prix de vente</label>
+        <input class='form-control' type="number" id='sellingPrice' name='sellingPrice' [(ngModel)]='computer.sellingPrice' #sellingPrice ='ngModel'/>
+    </div>
+    <div class="form-group">
+        <label for="buyingPrice">prix d'achat</label>
+        <input class='form-control' type="number" id='buyingPrice' name='buyingPrice' [(ngModel)]='computer.buyingPrice' #buyingPrice ='ngModel'/>
+    </div>
+    <div class="form-group">
+        <label for="dateEntryStock">date d'entrée dans le stock</label>
+        <input class='form-control' type="date" id='dateEntryStock' name='dateEntryStock' [(ngModel)]='computer.dateEntryStock' #dateEntryStock ='ngModel'/>
+    </div>
+    <div class='form-group'>
+        <input type="submit" class='btn btn-primary' value='modifier'>
+    </div>
+</div>
+</form>
+</div>

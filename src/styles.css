@@ -1,1 +1,135 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Amiko:wght@600&family=Baloo+Tamma+2:wght@500&family=Holtwood+One+SC&display=swap');
+
+::selection{
+    background:orangered;
+    color:whitesmoke;    
+}
+
+.navbar-expand-md a, .card, form, h3, .table, p{
+    font-family: 'Baloo Tamma 2';
+}
+
+.jumbotron{
+    color:#f2f2fd;
+}
+
+.navbar-expand-md a, form{
+    color:#646484;
+}
+
+.nav-item .disabled{
+    color:goldenrod;
+}
+
+.jumbotron{
+    /* font-family:'Holtwood One SC'; */
+    font-family:'Holtwood One SC';
+}
+
+.btn, .form-group > label, .form-check-label, .nav-item a, tr> td:first-of-type, h3{
+    text-transform: uppercase;
+    color:#646484;
+}
+
+.jumbotron h1{
+    font-size:1.8rem;
+}
+
+.lead{
+    margin:10% auto;
+}
+li:hover a{
+    /* font-weight:bolder; */
+    color:orangered;
+    transition:1s;
+}
+
+form{
+    border:1px solid lightgray;
+}
+
+.alert-warning{
+    margin:1% 0;
+}
+
+/* .form-group{
+    display:flex;
+    flex-direction: column;
+} */
+.form-check{
+    display:inline;
+    margin:auto 2%;
+}
+
+.form-group > label{
+    font-weight: bolder;
+    color:#646484,
+}
+
+.table{
+    border-collapse: collapse;
+    border:1px solid lightgrey;
+}
+
+tr> td:first-of-type{
+    color:orangered;
+}
+
+td{
+    color:#646484;
+}
+tr:hover{
+    background:royalblue;
+    color:white;
+    /* opacity:0.8; */
+}
+
+tr:hover td, tr:hover td a{
+    color:white;
+    
+}
+
+
+.card-header{
+    font-size:1.4rem;
+}
+.card-title, h5{
+    opacity: 0.8;
+}
+
+.suppression{
+    color:royalblue;
+}
+
+.suppression:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+/* #submitterElement{
+
+} */
+.btn{
+    border-radius:2px;
+    padding:0.5% 4%;
+    color:whitesmoke;
+}
+
+h3{
+    font-size:1.4rem;
+}
+
+.image{
+    display:flex;
+    background-image: url(../../examenFinal/src/assets/computers.jpg);
+    background-size: cover;
+    min-height:500px;
+    /* background-position:20% 0% ; */
+    
+}
+
+.home, .ajout, .update{
+    min-height: 1000px;
+}

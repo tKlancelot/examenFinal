@@ -1,0 +1,94 @@
+{
+  "computers": [
+    {
+      "id": 1,
+      "model": "Latitude 3500 - 15.6",
+      "brand": "apple",
+      "type": "ordinateur fixe",
+      "category": "premier prix",
+      "buyingPrice": 120.88,
+      "sellingPrice": 299,
+      "dateEntryStock": "2020-06-28"
+    },
+    {
+      "id": 2,
+      "model": "hp 840 g3",
+      "brand": "hp",
+      "type": "ordinateur portable",
+      "category": "bureautique",
+      "buyingPrice": 619,
+      "sellingPrice": 839,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 3,
+      "model": "asus a512",
+      "brand": "asus",
+      "type": "ordinateur portable",
+      "category": "premier prix",
+      "buyingPrice": 220,
+      "sellingPrice": 480,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 4,
+      "model": "dell g3 15",
+      "brand": "dell",
+      "type": "ordinateur portable",
+      "category": "gaming",
+      "buyingPrice": 700,
+      "sellingPrice": 990,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 5,
+      "model": "nouveau mac book pro",
+      "brand": "apple",
+      "type": "ordinateur portable",
+      "category": "premier prix",
+      "buyingPrice": 1020,
+      "sellingPrice": 1380,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 6,
+      "model": "asus zen aio",
+      "brand": "asus",
+      "type": "ordinateur fixe",
+      "category": "bureautique",
+      "buyingPrice": 1240,
+      "sellingPrice": 1690,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 7,
+      "model": "asus vivo aio",
+      "brand": "asus",
+      "type": "ordinateur fixe",
+      "category": "bureautique",
+      "buyingPrice": 580,
+      "sellingPrice": 839,
+      "dateEntryStock": "2020-07-02"
+    },
+    {
+      "id": 8,
+      "model": "test",
+      "brand": null,
+      "type": null,
+      "category": null,
+      "buyingPrice": 598,
+      "sellingPrice": 899,
+      "dateEntryStock": "2020-07-08"
+    },
+    {
+      "id": 9,
+      "model": "test",
+      "brand": null,
+      "type": null,
+      "category": null,
+      "buyingPrice": 598,
+      "sellingPrice": 899,
+      "dateEntryStock": "2020-07-08"
+    }
+  ]
+}

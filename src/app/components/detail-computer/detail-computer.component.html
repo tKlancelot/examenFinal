@@ -1,0 +1,47 @@
+<div class="home">
+
+
+<div class="container col-4 card text-center p-0">
+    <div class="card-header">
+        {{element.brand | uppercase }}
+    </div>
+    <h5 class="card-title bg-warning p-2">{{element.model}}</h5>
+    <div class="row card-body text-center m-0">
+      <table class='table table-hover table-md text-left'>
+        <tbody>
+            <tr>
+                <td>id</td>
+                <td>{{element.id}}</td>
+            </tr>
+            <tr>
+                <td>type</td>
+                <td>{{element.type}}</td>
+            </tr>
+            <tr>
+                <td>catégorie</td>
+                <td>{{element.category}}</td>
+            </tr>
+            <tr>
+                <td>prix d'achat</td>
+                <td>{{element.buyingPrice}} €</td>
+            </tr>
+            <tr>
+                <td>prix de vente</td>
+                <td>{{element.sellingPrice}} €</td>
+            </tr>
+            <tr>
+                <td>date d'entrée en stock</td>
+                <td>{{element.dateEntryStock}}</td>
+            </tr>
+
+        </tbody>
+      </table>
+      <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+      
+    </div>
+    <div class="card-footer text-muted">
+        <a routerLink='/home' class="btn btn-primary">retour</a>    
+    </div>
+  </div>
+
+</div>

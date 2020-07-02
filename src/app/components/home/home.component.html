@@ -1,0 +1,51 @@
+<div *ngIf='!isLoading' class="container col-12 home">
+<h3>nombre d'ordinateurs dans la bdd : {{count}}</h3>
+<table class="table table-sm text-uppercase p-2">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">modèle</th>
+        <th scope="col">marque</th>
+        <th scope="col">type</th>
+        <th scope="col">catégorie</th>
+        <th scope="col">prix d'achat</th>
+        <th scope="col">prix de vente</th>
+        <th scope="col">date d'ajout</th>
+        <th scope="col">indice rentabilité</th>
+
+        <th class='center'scope="col" colspan='3'>options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let element of computers' class='tableline'>
+        <th scope="row">{{element.id}}</th>
+        <td>{{element.model}}</td>
+        <td>{{element.brand}}</td>
+        <td>{{element.type}}</td>
+        <td>{{element.category}}</td>
+        <td>{{element.buyingPrice}} €</td>
+        <td>{{element.sellingPrice}} €</td>
+        <td>{{element.dateEntryStock}}</td>
+        <td>{{(element.sellingPrice - element.buyingPrice) | number:'1.0-1' }} €</td>
+
+        <td><a routerLink='/editComputer/{{element.id}}'>update this element</a></td>
+        <td><a routerLink='/detailComputer/{{element.id}}'>voir le détail</a></td>
+        <td class='suppr suppression'><a (click)='deleteThisComputer(element.id, template)'>delete this element</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<ng-template #template>
+    <div class="modal-body text-center">
+      <p>Êtes-vous sûr de vouloir effacer cet ordinateur ?</p>
+      <button type="button" class="btn btn-default m-2" (click)="confirm()" >oui</button>
+      <button type="button" class="btn btn-primary m-2" (click)="decline()" >non</button>
+    </div>
+  </ng-template> 
+
+<div *ngIf='isLoading'>
+    <p>chargement en cours . . .</p>
+</div>
